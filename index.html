@@ -1,526 +1,220 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sirajam Munira</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/5d93eb1089.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sirajam Munira — PhD student in Computer Science at Rensselaer Polytechnic Institute working on AI, large language models, human-AI interaction, and healthcare AI." />
+  <title>Sirajam Munira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
-
 <body>
-    <header class="header" id="myHeader">
-        <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
-            <a class="navbar-brand" href="index.html">Hey There!</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#academicProjects">Academic Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#programming">Programming Achievements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scholarship">Scholarships</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#research">Research Interest</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#affiliation">Professional Affiliation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#extra">Extra-curricular Activities</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle bg-warning text-dark" href="#" id="navbarDropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Visit Me
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="https://www.youtube.com/@MuniraToon"
-                                target="_blank">Youtube</a>
-                            <a class="dropdown-item" href="https://stopstalk.com/user/profile/Munira"
-                                target="_blank">Stopstalk</a>
-                            <a class="dropdown-item" href="https://www.linkedin.com/in/sirajammunira-iitju"
-                                target="_blank">Linkedin</a>
-                            <a class="dropdown-item" href="https://github.com/Sirajam-Munira" target="_blank">Github</a>
-                            <a class="dropdown-item" href="https://www.behance.net/sirajammunira3"
-                                target="_blank">Behance</a>
-                            <a class="dropdown-item" href="./assets/Sirajam_Munira CV.pdf" target="_blank">Download
-                                Resume</a>
-                        </div>
-                    </li>
-                </ul>
+  <div id="site-header"></div>
 
-            </div>
-        </nav>
-    </header>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Sirajam Munira</h1>
+        <p class="hero-role">PhD Student in Computer Science · Rensselaer Polytechnic Institute</p>
+        <p class="hero-text">
+          I am a researcher working at the intersection of artificial intelligence, large language models,
+          human-AI interaction, healthcare AI, and AI-supported learning. I am interested in building and
+          evaluating AI systems that are useful, reliable, and grounded in real-world human needs.
+        </p>
 
-    <div id="container--main">
-
-        <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/Munira2.png">
-
-            <div>
-                <h1 id="user-name">Sirajam Munira</h1>
-                <p id="bio">Trainee Software Engineer at
-                    <a href="https://bjitgroup.com/" target="_blank">BJIT</a> and
-                    Graduated from <a href="https://juniv.edu/institute/iit" target="_blank">IIT-JU</a>.
-                </p>
-                <p id="email">Contact me: <a href="mailto:sirajammunira07@gmail.com" target="_blank">
-                        sirajammunira07@gmail.com</a></p>
-            </div>
-        </section>
-
-        <section id="experience" class="section--page">
-            <h2>Work Experience</h2>
-
-            <div class="line-break"></div>
-            <div class="card--work-history">
-                <strong>TRAINEE SOFTWARE ENGINEER | BJIT</strong>
-                <p>01/08/2023 - Present</p>
-                <p>Completing a four-month training session at BJIT Academy gaining expertise in:</p>
-                <ul>
-                    <li>Java EE development for enterprise-level applications.</li>
-                    <li>Object-Oriented Programming (OOP) principles.</li>
-                    <li>Web basics for effective web app development.</li>
-                    <li>JavaServer Pages (JSP) and servlets for interactive web experiences.</li>
-                    <li>Design patterns for efficient and maintainable software architecture.</li>
-                    <li>DevOps practices for optimized workflows and deployment..</li>
-                    <li>Spring Framework for scalable and loosely coupled apps.</li>
-                    <li>AWS for cloud-based solutions.</li>
-                    <li>Front-end integration for seamless UI.</li>
-                    <li>Testing strategies for software quality.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <div class="row">
-                <div id="education" class="column">
-                    <h2>Education</h2>
-
-                    <div class="line-break"></div>
-                    <div class="card--work-history">
-                        <p><strong>B.Sc.</strong> (2018 - 2023)</p>
-                        <p>Institute of Information Technology, </br>
-                            Jahangirnagar University, Savar, Dhaka, Bangladesh </br>
-                            CGPA: <strong>3.86</strong> (2nd Position) </br>
-                            Thesis Title: Turning Trash into Treasure: Developing an Intelligent Bin for Plastic Bottle Recycle.
-
-                        </p>
-                    </div>
-
-                    <div class="line-break"></div>
-                    <div class="card--work-history">
-                        <p><strong>HSC</strong> (2015 - 2017)</p>
-                        <p>Ideal School and College, </br>
-                            Motijheel, Dhaka, Bangladesh </br>
-                            GPA: 5.00</br>
-                        </p>
-                    </div>
-
-                    <div class="line-break"></div>
-                    <div class="card--work-history">
-                        <p><strong>SSC</strong> (2013 - 2015)</p>
-                        <p>Ideal School and College, </br>
-                            Mugda, Dhaka, Bangladesh </br>
-                            GPA: 5.00</br>
-                        </p>
-                    </div>
-                </div>
-
-                <div id="skill" class="column">
-                    <h2>Skills</h2>
-                    <div class="line-break"></div>
-                    <div id="wrapper--techstack__items">
-                        <ul>
-                            <li>
-                                <div class="card--work-history">
-                                    <strong>Programming Languages: </strong>
-                                    <div class="card--techstack"><span>C, C++, Python</span></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card--work-history">
-                                    <strong>Worked With: </strong>
-                                    <div class="card--techstack"><span>OOP, Data Structure, Algorithm</span></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card--work-history">
-                                    <strong>Frameworks: </strong>
-                                    <div class="card--techstack"><span>Frontend: HTML, CSS, React, Bootstrap</br>
-                                            Backend: Java, PHP
-                                        </span></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card--work-history">
-                                    <strong>Database: </strong>
-                                    <div class="card--techstack"><span>MySQL</span></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card--work-history">
-                                    <strong>Tools & Software: </strong>
-                                    <div class="card--techstack"><span>Codeblocks, Visual Studio, Git, Overleaf</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card--work-history">
-                                    <strong>Graphics: </strong>
-                                    <div class="card--techstack"><span>Adobe Illustrator, Adobe Animate, Premier
-                                            Pro</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="academicProjects" class="section--page">
-            <h2>Academic Projects</h2>
-            <div class="line-break"></div>
-            <ul>
-                <li>
-                    <div class="card--project">
-                        <p><strong>JU Contact App using android studio</strong>
-                            <a class="btn btn-floating" href="https://github.com/Sirajam-Munira/JU-Contact-App" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            An app which will show all contact informations of JU students,
-                            teachers and staffs.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Company Website using HTML, CSS, JS, PHP</strong>
-                            <a class="btn btn-floating" href="https://github.com/Sirajam-Munira/Software-Company-Website" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A project of developing website of a company named Softocular
-                            containing all informations and portfolio of the company.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Personal Portfolio Website using HTML, CSS, JS</strong>
-                            <a class="btn btn-floating" href="https://github.com/Sirajam-Munira/Software-Company-Website" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A basic personal portfolio website which features
-                            a modern and responsive design, interactive elements and a variety
-                            of sections to provide visitors with information about the
-                            designer's background, services and a portfolio of their work.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>CV Website using HTML, CSS, JS</strong>
-                            <a class="btn btn-floating" href="https://github.com/Sirajam-Munira/munira" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A website which displays the curriculum vitae of ownself using HTML, CSS and JS.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Animated Landscape with OpenGL</strong>
-                            <a class="btn btn-floating" href="https://github.com/Sirajam-Munira/Animated-Landscape-Of-Jahangirnagar-University-with-OpenGL" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A computer graphics project developed by using C++, OpenGL, and GLUT libraries 
-                            to depict a picturesque and dynamic outdoor scene, featuring 
-                            various elements that come together to create a visually engaging and interactive landscape.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Cafeteria billing system using assembly
-                                language</strong>
-                            <a class="btn btn-floating" href="https://github.com/Sirajam-Munira/Cafeteria-billing-system-with-assembly-language" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A project using assembly language which will take orders and quantity
-                            form customers and show total bill.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Snake & Tic-Tac-Toe Games using C</strong>
-                            <a class="btn btn-floating" href="#" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A gaming project using C language which can be played by anyone. It
-                            also showed total scores and highest score.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Candy Crush Game using C++</strong>
-                            <a class="btn btn-floating" href="#" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            A gaming project using C++ language which is like normal candy crush
-                            game, it shows total score after game is over and move to next level.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card--project">
-                        <p><strong>Music Player App using android studio</strong>
-                            <a class="btn btn-floating" href="#" role="button" target="_blank"><i
-                                    class="fab fa-github-square text-dark" style='font-size:20px'></i></a>
-                            </br>
-                            An app which will work like general music player app.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            
-        </section>
-
-        <section class="section--page">
-            <div class="row">
-                <div id="programming" class="column">
-                    <h2>Programming Achievements</h2>
-                    <div class="line-break"></div>
-                    <ul>
-                        <li>
-                            <div class="card--work-history">
-                                <p>Ada Lovelace National Girls' Programming Contest (2021)
-                                    <a class="btn btn-floating"
-                                        href="https://toph.co/c/ada-lovelace-national-girls-2021/standings"
-                                        role="button" target="_blank"><i class="fa fa-trophy  text-warning"></i></a>
-                                    </br>
-                                    <strong>- 6th Position</strong> (Team: JU_Sukonna)
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="card--work-history">
-                                <p>National Girls' Programming Contest (2021)
-                                    <a class="btn btn-floating" href="https://toph.co/c/ngpc-2021/standings"
-                                        role="button" target="_blank"><i class="fa fa-trophy  text-warning"></i></a>
-                                    </br>
-                                    <strong>- 23rd Position</strong> (Team: JU_vanquisher)
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="card--work-history">
-                                <p>National Girls' Programming Contest (2019)
-                                    <a class="btn btn-floating" href="https://toph.co/c/ngpc-2019/standings"
-                                        role="button" target="_blank"><i class="fa fa-trophy  text-warning"></i></a>
-                                    </br>
-                                    <strong>- 18th Position</strong> (Team: JU_Sukonna)
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="card--work-history">
-                                <p>Inter University Girls' Programming Contest Season 2 (2019)
-                                    <a class="btn btn-floating" href="https://toph.co/c/iugpc-s2/standings"
-                                        role="button" target="_blank"><i class="fa fa-trophy  text-warning"></i></a>
-                                    </br>
-                                    <strong>- 9th Position</strong> (Team: JU_Sukonna)
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="scholarship" class="column">
-                    <h2>Award & Scholarship</h2>
-                    <div class="line-break"></div>
-                    <ul>
-                        <li>
-                            <div class="card--work-history">
-                                <p>Government Scholarship (2020)</br>
-                                    <strong>5th Position</strong>, 2nd Year Academic Result</br>
-                                    Jahangirnagar University
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="card--work-history">
-                                <p>Government Scholarship (2019)</br>
-                                    <strong>2nd Position</strong>, 1st Year Academic Result </br>
-                                    Jahangirnagar University
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="card--work-history">
-                                <p>Government Scholarship (2018)</br>
-                                    <strong>Admission Result</strong>, Jahangirnagar University</br>
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="card--work-history">
-                                <p>Government Scholarship (2012)</br>
-                                    <strong>Junior School Certificate Examination,</br></strong>
-                                    Ideal School and College</br></br>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="research" class="section--page">
-            <h2>Research Interest</h2>
-            <div class="line-break"></div>
-
-            <div class="card--work-history">
-                <div class="card--techstack"><span>Artificial Intelligence, Machine Learning,
-                        Human Computer Interaction, Image Processing, Data Mining</span></div>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <div class="row">
-                <div id="affiliation" class="column">
-                    <h2>Professional Affiliation</h2>
-                    <div class="line-break"></div>
-                    <ul>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>Chair</strong> (since 2023)</br>
-                                    - IEEE Jahangirnagar University Student Branch
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>IEEE Xtreme SB Ambassador</strong> (since 2023)</br>
-                                    - IEEE Jahangirnagar University Student Branch
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>Vice Chair</strong> (2022 - 2023)</br>
-                                    - IEEE Computer Society JU Student Branch Chapter
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>General Member</strong> (since 2021)</br>
-                                    - IEEE Jahangirnagar University Student Branch
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="extra" class="column">
-                    <h2>Extra-curricular Activities</h2>
-                    <div class="line-break"></div>
-                    <ul>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>Graphics Lead</strong> (since 2021)</br>
-                                    - IEEE Jahangirnagar University Student Branch
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>Graphics Designer</strong> (2021)</br>
-                                    - TCCE 2021 Conference
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>Founding Member</strong> (since 2019)</br>
-                                    - Astitwa- A voluntary non profit organization
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card--work-history">
-                                <p><strong>Instructor</strong> (2017 - 2022)</br>
-                                    - Udvash & 10 Minute School
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <!-- <footer class="text-center text-dark">
-        <div class="container">
-            <p>Connect With Me:</p>
-            <section class="mb-4">
-                <a class="btn btn-outline-dark btn-floating m-2" href="https://www.facebook.com/sirajammunira.ju"
-                    role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-dark btn-floating m-2" href="https://www.instagram.com/muniratoon/"
-                    role="button" target="_blank"><i class="fab fa-instagram"></i></a>
-            </section>
+        <div class="contact-row" aria-label="Contact and profile links">
+          <a class="contact-link" href="mailto:munirs@rpi.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+          <a class="contact-link" href="https://linkedin.com/in/munirs" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+          <a class="contact-link" href="https://github.com/Sirajam-Munira" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+          <a class="contact-link" href="https://scholar.google.com/citations?hl=en&user=zDOeN8AAAAAJ&view_op=list_works&sortby=pubdate" aria-label="Google Scholar profile"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a>
+          <a class="contact-link" href="assets/files/SirajamMunira_Resume.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><span>CV</span></a>
         </div>
-    </footer> -->
+      </div>
 
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/images/Munira.jpg" alt="Portrait of Sirajam Munira"
+             onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder');" />
+      </div>
+    </section>
 
-    <!--custom js file link-->
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- =========================================================
+         RESEARCH & PUBLICATIONS
+         ========================================================= -->
+    <section class="section container" id="research">
+      <div class="section-heading-row">
+        <div>
+          <p class="section-kicker">Research &amp; Publications</p>
+          <h2>What I work on</h2>
+        </div>
+      </div>
 
+      <p class="section-lead">
+        My current work spans large language models, human-centered AI, healthcare applications,
+        and the use of generative AI in education.
+      </p>
+
+      <div class="tag-list research-tags">
+        <span>Large Language Models</span>
+        <span>Human-AI Interaction</span>
+        <span>Healthcare AI</span>
+        <span>Explainable AI</span>
+        <span>Machine Learning</span>
+        <span>AI in Education</span>
+      </div>
+
+      <div class="publications-section home-publications">
+        <h3>Journal Articles</h3>
+        <ol class="publication-list">
+          <li>
+            <p class="pub-title">Community-Based Early-Stage Chronic Kidney Disease Screening using Explainable Machine Learning for Low-Resource Settings</p>
+            <p class="pub-authors">M. A. Kabir, <strong>S. Munira</strong>, D. T. Azad, S. M. Ikram, M. H. R. Sarker, S. M. A. Hanifi</p>
+            <p class="pub-venue"><em>International Journal of Medical Informatics</em>, Jul 2026
+              <a class="pub-link" href="https://doi.org/10.1016/j.ijmedinf.2026.106435" target="_blank" rel="noopener" aria-label="Open paper on arXiv" title="Paper link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">Zero-Shot Parkinson's Disease Detection from Speech: Comparing Large Audio and Language Models</p>
+            <p class="pub-authors">M. A. Kabir, <strong>S. Munira</strong></p>
+            <p class="pub-venue"><em>Arxiv</em>
+              <a class="pub-link" href="https://doi.org/10.48550/arXiv.2605.24806" target="_blank" rel="noopener" aria-label="Open published paper" title="Paper link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">Turning Trash into Treasure: Developing an Intelligent Bin for Plastic Bottle Recycling</p>
+            <p class="pub-authors"><strong>S. Munira</strong>, N. Paul, M. A. Alam, M. M. Rahman, M. S. Kaiser</p>
+            <p class="pub-venue"><em>Journal of Social Computing</em>, Mar 2024
+              <a class="pub-link" href="https://doi.org/10.23919/JSC.2024.0001" target="_blank" rel="noopener" aria-label="Open published paper" title="Paper link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </p>
+          </li>
+        </ol>
+
+        <h3>Conference Papers &amp; Posters</h3>
+        <ol class="publication-list">
+          <li>
+            <p class="pub-title">From Many to Meaningful: Feature-Guided Zero-Shot Chronic Kidney Disease Screening Using Large Language Models</p>
+            <p class="pub-authors">M. A. Kabir, <strong>S. Munira</strong></p>            
+            <p class="pub-venue"><em>Artificial Intelligence in Medicine (AIME)</em>, Jul 2026
+              <a class="pub-link" href="https://doi.org/10.1007/978-3-032-30710-1_5" target="_blank" rel="noopener" aria-label="Open published paper" title="Paper link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </p>
+          </li>
+          <li>
+            <p class="pub-title">The Day My Chatbot Changed: Characterizing the Mental Health Impacts of Social AI App Updates via Negative User Reviews</p>
+            <p class="pub-authors"><strong>S. Munira</strong>, L. Manikonda </p>            
+            <p class="pub-venue"><em>ACM Web Science Conference (WebSci)</em>, Poster, May 2026
+              <a class="pub-link" href="https://doi.org/10.1145/3795513.3807437" target="_blank" rel="noopener" aria-label="Open published paper" title="Paper link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EDUCATION
+         ========================================================= -->
+    <section class="section container" id="education">
+      <p class="section-kicker">Education</p>
+      <h2>Academic background</h2>
+
+      <div class="timeline-list compact-timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Aug 2024 — Present</div>
+          <div>
+            <h3>PhD in Computer Science</h3>
+            <p class="meta">Rensselaer Polytechnic Institute · Troy, NY, USA</p>
+            <p>Research focus: Artificial Intelligence, Large Language Models, and Human-Computer Interaction.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Aug 2024 - May 2026</div>
+          <div>
+            <h3>MS in Computer Science</h3>
+            <p class="meta">Rensselaer Polytechnic Institute · Troy, NY, USA</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Feb 2018 — Mar 2023</div>
+          <div>
+            <h3>BSc in Information Technology</h3>
+            <p class="meta">Jahangirnagar University · Dhaka, Bangladesh</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EXPERIENCE
+         ========================================================= -->
+    <section class="section container" id="experience">
+      <p class="section-kicker">Experience</p>
+      <h2>Research, teaching &amp; industry</h2>
+
+      <div class="timeline-list compact-timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Jan 2026 — Jul 2026</div>
+          <div>
+            <h3>Graduate Research Assistant</h3>
+            <p class="meta">Rensselaer Polytechnic Institute · Troy, NY</p>
+            <ul class="timeline-details">
+              <li>Conducted research for the NSF-funded GenAI in Higher Education project (genaiinhighered.github.io).</li>
+              <li>Examining the impact of generative AI on student learning, critical thinking, and learning outcomes.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Aug 2024 — Dec 2025</div>
+          <div>
+            <h3>Graduate Teaching Assistant</h3>
+            <p class="meta">Rensselaer Polytechnic Institute · Troy, NY</p>
+            <p>Evaluated and graded the assignments, homework, and answer sheets of the students. Managed the attendance and teamwork of the students and guided them if they faced any difficulties.</p>
+            <ul class="timeline-details">
+              <li>CSCI 4460/6460 Large-Scale Programming &amp; Testing — Fall 2024</li>
+              <li>CSCI 4380 Database Systems — Spring 2025 and Fall 2025</li>
+              <li>CSCI 2300 Introduction to Algorithms — Summer 2025</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Aug 2023 — Jun 2024</div>
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="meta">BJIT Group · Bangladesh</p>
+            <ul class="timeline-details">
+              <li>Collaborated with the team to maintain the backend of an e-commerce website named "Rakuten".</li>
+              <li>Developed expertise in Java EE, Spring Boot, Core Java, React, DevOps, and AWS, emphasizing OOP, design patterns, security, and proficient GitHub collaboration.</li>
+          </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PHD PROJECTS
+         Keep only current/research-level projects here.
+         Older resume/software projects are on Activities.
+         ========================================================= -->
+    <section class="section container" id="projects">
+      <p class="section-kicker">Projects</p>
+      <h2>Projects</h2>
+
+        <article class="project-item">
+          <p class="project-type">AI in Education · Human-AI Interaction</p>
+          <h3>Generative AI in Higher Education</h3>
+          <p>Studying how students use generative AI for learning, including perceived support, cognitive reliance, confidence, and critical evaluation.</p>
+        </article>
+        
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
 </body>
-
 </html>

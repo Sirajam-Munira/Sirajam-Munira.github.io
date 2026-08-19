@@ -1,82 +1,90 @@
-$(document).on('click', '.navbar-collapse.show', function (e) {
-    if ($(e.target).is('a.dropdown-toggle')) {
-        $(this).collapse('hide');
-    }
-});
+// =============================================================
+// SITE-WIDE NAVIGATION
+// Edit this file once to update the menu and footer on every page.
+// Home-page sections are also available directly from the menu.
+// =============================================================
 
-// Use jQuery for the scroll event
-$(window).on('scroll', function () {
-    myFunction();
-});
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
+function currentPage() {
+  const file = window.location.pathname.split("/").pop();
+  return file || "index.html";
 }
 
-$(document).ready(function () {
-    if ($(window).width() < 992) {
-        $('.navbar-nav .nav-item.dropdown').click(function () {
-            $(this).find('.dropdown-menu').stop(true, true).fadeToggle(200);
-        });
-    }
+function homeSectionHref(sectionId) {
+  return currentPage() === "index.html" ? `#${sectionId}` : `index.html#${sectionId}`;
+}
 
-    // Use jQuery to handle the click event and collapse behavior
-    $(document).on('click', '.navbar-collapse.show', function (e) {
-        if ($(e.target).is('a') && $(e.target).attr('class') !== 'dropdown-toggle') {
-            $(this).collapse('hide');
-        }
-    });
+function navigationItems() {
+  return [
+    ["Home", currentPage() === "index.html" ? "#home" : "index.html"],
+    ["Research & Publications", homeSectionHref("research")],
+    ["Education", homeSectionHref("education")],
+    ["Experience", homeSectionHref("experience")],
+    ["Projects", homeSectionHref("projects")],
+    ["Achievements", "achievements.html"],
+    ["Activities", "activities.html"],
+    ["News", "news.html"],
+    ["Stills", "stills.html"]
+  ];
+}
 
-    // Use jQuery to handle the click event for the dropdown-toggle
-    $('.dropdown-toggle').on('click', function () {
-        $(this).parent().toggleClass('show');
-    });
+function renderHeader() {
+  const headerTarget = document.getElementById("site-header");
+  if (!headerTarget) return;
 
-    // Use jQuery to close the dropdown when clicking outside
-    $(document).on('click', function (e) {
-        var target = e.target;
-        if (!$(target).is('.navbar-nav')) {
-            $('.navbar-collapse').collapse('hide');
-        }
-    });
-});
+  const page = currentPage();
+  const links = navigationItems().map(([label, href]) => {
+    const linkedFile = href.split("#")[0] || "index.html";
+    const isStandalonePage = !href.startsWith("#") && !href.includes("index.html#");
+    const isActive = isStandalonePage && page === linkedFile;
+    return `<a href="${href}" class="${isActive ? "active" : ""}">${label}</a>`;
+  }).join("");
 
+  headerTarget.innerHTML = `
+    <header class="site-header" id="main-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Sirajam Munira</a>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i><span>Menu</span>
+        </button>
+        <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+          ${links}
+        </nav>
+      </div>
+    </header>`;
 
+  const menuButton = document.getElementById("menu-button");
+  const navLinks = document.getElementById("nav-links");
 
-$(document).ready(function () {
-    // Function to update URL hash based on active section
-    function updateURLHash() {
-        var sections = ['experience', 'education-skill', 'academicProjects', 'programming-scholarship', 'research', 'affiliation-extra'];
-        for (var i = 0; i < sections.length; i++) {
-            var section = $('#' + sections[i]);
-            if (section.length && isElementInViewport(section[0])) {
-                history.replaceState(null, null, '#' + sections[i]);
-                break;
-            }
-        }
-    }
+  menuButton?.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
 
-    // Check if an element is in the viewport
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+  navLinks?.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("open"));
+  });
 
-    // Update URL hash on scroll
-    $(window).on('scroll', updateURLHash);
+  window.addEventListener("scroll", () => {
+    document.getElementById("main-header")?.classList.toggle("scrolled", window.scrollY > 6);
+  });
+}
 
-    // Update URL hash on page load
-    updateURLHash();
-});
+function renderFooter() {
+  const footerTarget = document.getElementById("site-footer");
+  if (!footerTarget) return;
+
+  footerTarget.innerHTML = `
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <span>© ${new Date().getFullYear()} Sirajam Munira</span>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="mailto:munirs@rpi.edu" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://linkedin.com/in/munirs" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://github.com/Sirajam-Munira" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>`;
+}
+
+renderHeader();
+renderFooter();
