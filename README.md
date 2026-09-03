@@ -1,33 +1,63 @@
-# Personal Responsive Portfolio Website
+# Sirajam Munira — Portfolio
 
-Visit the [Portfolio](https://sirajam-munira.github.io/) here.
-## Technologies Used
+This repository contains the source code for my personal academic and research portfolio.
 
-- **Languages:**
-  - HTML
-  - CSS
-  - JavaScript
+🌐 **Website:** [https://sirajam-munira.github.io/](https://sirajam-munira.github.io/)
 
-- **Frameworks and Libraries:**
-  - Bootstrap
-  - Font Awesome
-  - Popper.js
+## About Me
 
-- **Web Technologies:**
-  - Responsive design for mobile devices
-  - Navigation bar with a dropdown menu
-  - Links to external websites
-  - Embedded images and links
+I am **Sirajam Munira**, a PhD student in Computer Science at **Rensselaer Polytechnic Institute (RPI)**.
 
-## Design and Interaction
+My research interests include:
 
-- **Responsive Design:**
-  - Utilizes Bootstrap for a responsive and mobile-friendly layout.
+- Artificial Intelligence
+- Large Language Models (LLMs)
+- Human-AI Interaction
+- Healthcare AI
+- Explainable AI
+- Machine Learning
+- AI in Education
 
-- **Interactive Features:**
-  - Collapsible navigation menu
-  - External links open in new tabs
-  - Buttons with hover effects
+My work focuses on developing and evaluating AI systems for real-world applications, particularly in healthcare and education.
 
-- **Scripts:**
-  - External JavaScript files for enhanced functionality
+## Portfolio
+
+The website includes information about my:
+
+- Research and publications
+- Education
+- Research, teaching, and industry experience
+- Current research projects
+- Academic and programming achievements
+- Leadership and professional activities
+- News and recent updates
+- Selected personal and academic moments
+
+## Website Structure
+
+```text
+├── index.html
+├── achievements.html
+├── activities.html
+├── news.html
+├── stills.html
+├── script.js
+├── styles/
+│   └── main.css
+└── assets/
+    ├── images/
+    └── files/
+```
+
+The website is built with **HTML, CSS, and JavaScript** and hosted using **GitHub Pages**.
+
+## Connect
+
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=zDOeN8AAAAAJ&view_op=list_works&sortby=pubdate)
+- [LinkedIn](https://www.linkedin.com/in/munirs)
+- [GitHub](https://github.com/Sirajam-Munira)
+- Email: munirs@rpi.edu
+
+---
+
+© Sirajam Munira
