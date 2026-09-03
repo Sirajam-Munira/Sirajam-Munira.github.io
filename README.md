@@ -1,6 +1,6 @@
 # Personal Responsive Portfolio Website
 
-Visit the [Portfolio](https://sirajam-munira.github.io/munira/) here.
+Visit the [Portfolio](https://sirajam-munira.github.io/) here.
 ## Technologies Used
 
 - **Languages:**
